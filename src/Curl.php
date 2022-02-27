@@ -95,7 +95,7 @@ class Curl {
             $this->loop_timer = $this->loop->addPeriodicTimer($this->timeout, function() {
                 $this->run();
                 if (!($this->client->run() || $this->client->has())) {
-                    $this->loop_timer->cancel();
+                    $this->loop->cancelTimer($this->loop_timer);
                     $this->loop_timer = null;
                 }
             });
