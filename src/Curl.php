@@ -52,7 +52,7 @@ class Curl {
 
     /**
      * @param $url
-     * @param array $data
+     * @param array|string $data
      * @param array $opts
      * @return Promise
      */
