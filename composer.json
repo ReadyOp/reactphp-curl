@@ -9,7 +9,7 @@
         "ext-curl": "*",
         "react/promise": "^3.0 || ~2.0",
         "react/event-loop": "*",
-        "khr/php-mcurl-client": "3.*"
+        "khr/php-mcurl-client": "*"
     },
     "require-dev": {
 
